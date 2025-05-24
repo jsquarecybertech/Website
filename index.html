@@ -273,7 +273,7 @@
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .max-w-7xl, .max-w-5xl {
-                max-width: 98vw !important;
+                max-width: 100vw !important;
                 padding-left: 2vw !important;
                 padding-right: 2vw !important;
             }
@@ -292,50 +292,16 @@
         }
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 2.2rem !important;
+                font-size: 1.7rem !important;
             }
             .section-title {
-                font-size: 1.5rem !important;
-            }
-            .p-8, .p-10 {
-                padding: 1.5rem !important;
-            }
-            .rounded-2xl, .rounded-xl {
-                border-radius: 1rem !important;
-            }
-            .flex, .lg\:flex-row {
-                flex-direction: column !important;
-            }
-            .gap-16, .gap-10, .gap-8, .gap-6 {
-                gap: 1.5rem !important;
-            }
-            .mb-20 {
-                margin-bottom: 2rem !important;
-            }
-            .mt-24 {
-                margin-top: 2rem !important;
-            }
-            .py-24 {
-                padding-top: 2.5rem !important;
-                padding-bottom: 2.5rem !important;
-            }
-            .px-6, .sm\:px-8, .lg\:px-10 {
-                padding-left: 1rem !important;
-                padding-right: 1rem !important;
-            }
-        }
-        @media (max-width: 600px) {
-            .hero-title {
-                font-size: 1.5rem !important;
-            }
-            .section-title {
-                font-size: 1.1rem !important;
+                font-size: 1.2rem !important;
             }
             .p-8, .p-10 {
                 padding: 1rem !important;
             }
             .rounded-2xl, .rounded-xl {
-                border-radius: 0.7rem !important;
+                border-radius: 0.8rem !important;
             }
             .flex, .lg\:flex-row {
                 flex-direction: column !important;
@@ -358,23 +324,67 @@
                 padding-right: 0.5rem !important;
             }
             .w-32, .w-40, .w-64, .w-80, .w-16, .w-24, .w-20, .h-32, .h-40, .h-64, .h-80, .h-16, .h-24, .h-20 {
-                width: 3.5rem !important;
-                height: 3.5rem !important;
+                width: 2.5rem !important;
+                height: 2.5rem !important;
             }
             .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl {
-                font-size: 1.1rem !important;
+                font-size: 1rem !important;
             }
             .rounded-full {
                 border-radius: 50% !important;
             }
+            .glass-card {
+                padding: 0.7rem !important;
+            }
+            .max-w-7xl, .max-w-5xl {
+                max-width: 100vw !important;
+            }
+            .grid-cols-1, .md\:grid-cols-2, .lg\:grid-cols-3 {
+                grid-template-columns: 1fr !important;
+            }
         }
-        @media (max-width: 400px) {
+        @media (max-width: 480px) {
             .hero-title, .section-title {
                 font-size: 1rem !important;
             }
             .p-8, .p-10 {
-                padding: 0.5rem !important;
+                padding: 0.3rem !important;
             }
+            .rounded-2xl, .rounded-xl {
+                border-radius: 0.5rem !important;
+            }
+            .mb-20, .mt-24 {
+                margin-bottom: 0.7rem !important;
+                margin-top: 0.7rem !important;
+            }
+            .py-24 {
+                padding-top: 0.7rem !important;
+                padding-bottom: 0.7rem !important;
+            }
+            .px-6, .sm\:px-8, .lg\:px-10 {
+                padding-left: 0.2rem !important;
+                padding-right: 0.2rem !important;
+            }
+            .w-32, .w-40, .w-64, .w-80, .w-16, .w-24, .w-20, .h-32, .h-40, .h-64, .h-80, .h-16, .h-24, .h-20 {
+                width: 1.5rem !important;
+                height: 1.5rem !important;
+            }
+            .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl {
+                font-size: 0.8rem !important;
+            }
+            .glass-card {
+                padding: 0.3rem !important;
+            }
+        }
+        /* Ensure nav and footer are scrollable and not clipped on mobile */
+        nav, footer {
+            min-width: 0;
+            word-break: break-word;
+        }
+        /* Fix for horizontal scroll on mobile */
+        html, body {
+            max-width: 100vw;
+            overflow-x: hidden;
         }
     </style>
 </head>
