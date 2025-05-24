@@ -440,6 +440,44 @@
             width: clamp(1rem, 10vw, 4rem);
             height: clamp(1rem, 10vw, 4rem);
         }
+        
+        /* Hacker-style custom mouse pointer */
+        .hacker-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            pointer-events: none;
+            z-index: 9999;
+            border-radius: 0;
+            background: none;
+            border: 2px solid #00ff9d;
+            box-shadow: 0 0 12px 2px #00ff9d99, 0 0 2px 1px #00b8ff99;
+            mix-blend-mode: lighten;
+            transition: transform 0.08s cubic-bezier(.4,2,.6,1), opacity 0.2s;
+            opacity: 0.95;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+        .hacker-cursor::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 6px;
+            height: 6px;
+            background: #00ff9d;
+            border-radius: 1px;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px 2px #00ff9d99;
+        }
+        @media (max-width: 768px) {
+            .hacker-cursor { display: none !important; }
+        }
     </style>
 </head>
 <body class="matrix-bg">
@@ -956,6 +994,9 @@
                             </ul>
                         </div>
                         <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-primary transition text-xl">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1293,6 +1334,22 @@
         window.addEventListener('load', function() {
             setTimeout(typeTerminalText, 1000);
         });
+        
+        // Hacker-style mouse pointer
+        (function() {
+            const cursor = document.createElement('div');
+            cursor.className = 'hacker-cursor';
+            document.body.appendChild(cursor);
+            document.body.style.cursor = 'none';
+            document.addEventListener('mousemove', function(e) {
+                cursor.style.transform = `translate(${e.clientX - 16}px, ${e.clientY - 16}px)`;
+            });
+            // Hide on touch devices
+            window.addEventListener('touchstart', function() {
+                cursor.style.display = 'none';
+                document.body.style.cursor = '';
+            }, { once: true });
+        })();
     </script>
 </body>
 </html>
