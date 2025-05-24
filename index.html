@@ -277,25 +277,25 @@
                 padding-left: 2vw !important;
                 padding-right: 2vw !important;
             }
-            .grid-cols-2, .md\:grid-cols-2 {
+            .grid-cols-2, .md\:grid-cols-2, .grid-cols-4, .md\:grid-cols-4, .lg\:grid-cols-3 {
                 grid-template-columns: 1fr !important;
             }
-            .grid-cols-4, .md\:grid-cols-4 {
-                grid-template-columns: 1fr 1fr !important;
-            }
-            .lg\:flex-row {
+            .lg\:flex-row, .flex-row {
                 flex-direction: column !important;
             }
-            .lg\:w-1\/2 {
+            .lg\:w-1\/2, .w-1\/2 {
                 width: 100% !important;
+            }
+            .gap-16, .gap-10, .gap-8, .gap-6 {
+                gap: 1.5rem !important;
             }
         }
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 1.7rem !important;
+                font-size: 2rem !important;
             }
             .section-title {
-                font-size: 1.2rem !important;
+                font-size: 1.3rem !important;
             }
             .p-8, .p-10 {
                 padding: 1rem !important;
@@ -303,32 +303,24 @@
             .rounded-2xl, .rounded-xl {
                 border-radius: 0.8rem !important;
             }
-            .flex, .lg\:flex-row {
-                flex-direction: column !important;
-            }
-            .gap-16, .gap-10, .gap-8, .gap-6 {
-                gap: 1rem !important;
-            }
-            .mb-20 {
-                margin-bottom: 1.2rem !important;
-            }
-            .mt-24 {
-                margin-top: 1.2rem !important;
+            .mb-20, .mt-24 {
+                margin-bottom: 1.5rem !important;
+                margin-top: 1.5rem !important;
             }
             .py-24 {
-                padding-top: 1.2rem !important;
-                padding-bottom: 1.2rem !important;
+                padding-top: 2rem !important;
+                padding-bottom: 2rem !important;
             }
             .px-6, .sm\:px-8, .lg\:px-10 {
-                padding-left: 0.5rem !important;
-                padding-right: 0.5rem !important;
+                padding-left: 0.7rem !important;
+                padding-right: 0.7rem !important;
             }
             .w-32, .w-40, .w-64, .w-80, .w-16, .w-24, .w-20, .h-32, .h-40, .h-64, .h-80, .h-16, .h-24, .h-20 {
-                width: 2.5rem !important;
-                height: 2.5rem !important;
+                width: 3rem !important;
+                height: 3rem !important;
             }
             .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl {
-                font-size: 1rem !important;
+                font-size: 1.1rem !important;
             }
             .rounded-full {
                 border-radius: 50% !important;
@@ -339,52 +331,127 @@
             .max-w-7xl, .max-w-5xl {
                 max-width: 100vw !important;
             }
-            .grid-cols-1, .md\:grid-cols-2, .lg\:grid-cols-3 {
+            
+            /* --- Fix card grid and text overflow for mobile --- */
+            .mt-10.grid.grid-cols-2.gap-6 {
                 grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+            .glass-card.p-6.rounded-xl {
+                min-width: 0 !important;
+                word-break: break-word !important;
+                overflow-wrap: break-word !important;
+                padding: 1rem !important;
+            }
+            .text-xl, .font-bold, .code-font {
+                font-size: 1rem !important;
+            }
+            .text-gray-400.code-font {
+                font-size: 0.95rem !important;
             }
         }
-        @media (max-width: 480px) {
-            .hero-title, .section-title {
+        @media (max-width: 600px) {
+            .hero-title {
+                font-size: 1.2rem !important;
+            }
+            .section-title {
                 font-size: 1rem !important;
             }
             .p-8, .p-10 {
-                padding: 0.3rem !important;
+                padding: 0.5rem !important;
             }
             .rounded-2xl, .rounded-xl {
                 border-radius: 0.5rem !important;
             }
             .mb-20, .mt-24 {
-                margin-bottom: 0.7rem !important;
-                margin-top: 0.7rem !important;
+                margin-bottom: 1rem !important;
+                margin-top: 1rem !important;
             }
             .py-24 {
-                padding-top: 0.7rem !important;
-                padding-bottom: 0.7rem !important;
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
             }
             .px-6, .sm\:px-8, .lg\:px-10 {
-                padding-left: 0.2rem !important;
-                padding-right: 0.2rem !important;
+                padding-left: 0.3rem !important;
+                padding-right: 0.3rem !important;
             }
             .w-32, .w-40, .w-64, .w-80, .w-16, .w-24, .w-20, .h-32, .h-40, .h-64, .h-80, .h-16, .h-24, .h-20 {
-                width: 1.5rem !important;
-                height: 1.5rem !important;
+                width: 2rem !important;
+                height: 2rem !important;
             }
             .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl {
-                font-size: 0.8rem !important;
+                font-size: 0.9rem !important;
             }
             .glass-card {
                 padding: 0.3rem !important;
             }
+            .max-w-7xl, .max-w-5xl {
+                max-width: 100vw !important;
+            }
+            nav, footer {
+                min-width: 0;
+                word-break: break-word;
+            }
         }
-        /* Ensure nav and footer are scrollable and not clipped on mobile */
-        nav, footer {
-            min-width: 0;
-            word-break: break-word;
+        @media (max-width: 400px) {
+            .hero-title, .section-title {
+                font-size: 0.8rem !important;
+            }
+            .p-8, .p-10 {
+                padding: 0.2rem !important;
+            }
         }
-        /* Fix for horizontal scroll on mobile */
+        /* Touch-friendly buttons and links */
+        button, .btn-primary, .btn-outline, a, .nav-link {
+            min-height: 44px;
+            min-width: 44px;
+            font-size: 1rem;
+            padding: 0.7em 1.2em;
+        }
+        /* Prevent horizontal scroll on mobile */
         html, body {
             max-width: 100vw;
             overflow-x: hidden;
+        }
+        /* Fix for grid overflow on mobile */
+        .grid, [class*='grid-cols-'] {
+            width: 100%;
+        }
+        /* Ensure FAQ and contact cards don't overflow */
+        .glass-card {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        /* Responsive adjustments for circle diameters only */
+        /* Default (desktop/laptop): keep as is */
+        .circle-diameter {
+            width: 4rem;
+            height: 4rem;
+        }
+        @media (max-width: 1024px) {
+            .circle-diameter {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .circle-diameter {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .circle-diameter {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .circle-diameter {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -522,16 +589,16 @@
                                 </div>
                                 <h4 class="text-xl font-bold mb-3">Real-time Protection</h4>
                                 <p class="text-gray-400 code-font">
-                                    continuous_monitoring()
+                                    live_monitoring()
                                 </p>
                             </div>
                             <div class="glass-card p-6 rounded-xl">
-                                <div class="text-secondary text-3xl mb-4">
+                                <div class="text-secondary text3xl mb-4">
                                     <i class="fas fa-robot"></i>
                                 </div>
                                 <h4 class="text-xl font-bold mb-3">AI-Powered</h4>
                                 <p class="text-gray-400 code-font">
-                                    adaptive_threat_detection()
+                                    Smart scan()
                                 </p>
                             </div>
                         </div>
