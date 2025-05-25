@@ -211,12 +211,12 @@
         
         /* Responsive font sizes */
         .hero-title {
-            font-size: clamp(2rem, 8vw, 5rem);
-            line-height: 1.1;
+            font-size: clamp(1.8rem, 6vw, 3.5rem);
+            line-height: 1.2;
         }
         
         .section-title {
-            font-size: clamp(1.5rem, 6vw, 3.5rem);
+            font-size: clamp(1.5rem, 5vw, 3rem);
         }
         
         .text-xl {
@@ -236,42 +236,42 @@
         }
         
         .text-4xl {
-            font-size: clamp(1.5rem, 6vw, 2.25rem);
+            font-size: clamp(1.5rem, 5vw, 2.25rem);
         }
         
         .text-5xl {
-            font-size: clamp(1.8rem, 7vw, 3rem);
+            font-size: clamp(1.8rem, 6vw, 3rem);
         }
         
         .text-6xl {
-            font-size: clamp(2rem, 8vw, 3.75rem);
+            font-size: clamp(2rem, 7vw, 3.75rem);
         }
         
         .text-7xl {
-            font-size: clamp(2.5rem, 9vw, 4.5rem);
+            font-size: clamp(2.2rem, 7vw, 4.5rem);
         }
         
         /* Responsive spacing */
         .responsive-padding {
-            padding: clamp(0.5rem, 2vw, 2rem);
+            padding: clamp(0.5rem, 2vw, 1.5rem);
         }
         
         .responsive-py {
-            padding-top: clamp(1rem, 4vw, 3rem);
-            padding-bottom: clamp(1rem, 4vw, 3rem);
+            padding-top: clamp(1rem, 3vw, 2.5rem);
+            padding-bottom: clamp(1rem, 3vw, 2.5rem);
         }
         
         .responsive-px {
-            padding-left: clamp(0.5rem, 2vw, 2rem);
-            padding-right: clamp(0.5rem, 2vw, 2rem);
+            padding-left: clamp(0.5rem, 2vw, 1.5rem);
+            padding-right: clamp(0.5rem, 2vw, 1.5rem);
         }
         
         .responsive-mb {
-            margin-bottom: clamp(1rem, 4vw, 3rem);
+            margin-bottom: clamp(0.8rem, 3vw, 2.5rem);
         }
         
         .responsive-gap {
-            gap: clamp(0.5rem, 2vw, 2rem);
+            gap: clamp(0.5rem, 2vw, 1.5rem);
         }
         
         /* Responsive widths */
@@ -281,12 +281,12 @@
         
         /* Responsive elements */
         .responsive-circle {
-            width: clamp(2rem, 10vw, 4rem);
-            height: clamp(2rem, 10vw, 4rem);
+            width: clamp(2rem, 8vw, 3.5rem);
+            height: clamp(2rem, 8vw, 3.5rem);
         }
         
         .responsive-icon {
-            font-size: clamp(1rem, 4vw, 2rem);
+            font-size: clamp(1rem, 3.5vw, 1.8rem);
         }
         
         /* Custom scrollbar */
@@ -311,7 +311,7 @@
         .terminal-effect::before {
             content: '>';
             position: absolute;
-            left: -1.5rem;
+            left: -1.2rem;
             color: var(--terminal);
             font-family: 'JetBrains Mono', monospace;
         }
@@ -345,11 +345,12 @@
         /* Mobile (up to 480px) */
         @media (max-width: 480px) {
             .hero-title {
-                font-size: clamp(1.8rem, 8vw, 2.5rem);
+                font-size: clamp(1.5rem, 7vw, 2rem);
+                line-height: 1.3;
             }
             
             .section-title {
-                font-size: clamp(1.3rem, 6vw, 1.8rem);
+                font-size: clamp(1.3rem, 5vw, 1.6rem);
             }
             
             .grid-cols-2, .grid-cols-3, .grid-cols-4 {
@@ -365,7 +366,7 @@
             }
             
             .timeline-item {
-                padding-left: 2rem;
+                padding-left: 1.8rem;
             }
             
             .timeline-dot {
@@ -379,7 +380,7 @@
             }
 
             .nav-link {
-                padding: 0.75rem 0;
+                padding: 0.6rem 0;
                 display: block;
             }
 
@@ -392,7 +393,53 @@
             }
 
             .responsive-mt {
-                margin-top: clamp(1rem, 4vw, 2rem);
+                margin-top: clamp(0.8rem, 3vw, 1.5rem);
+            }
+            
+            /* Header adjustments */
+            nav {
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+            }
+            
+            .nav-brand {
+                font-size: 1.2rem;
+            }
+            
+            .mobile-menu-button svg {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            
+            /* Hero section adjustments */
+            #home {
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+            }
+            
+            .hero-tagline {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            
+            .hero-buttons a {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .trust-indicators {
+                margin-top: 1.5rem;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.8rem;
+            }
+            
+            .trust-indicators div {
+                padding: 0.8rem;
             }
         }
         
@@ -415,7 +462,43 @@
             }
 
             .responsive-mt {
-                margin-top: clamp(1rem, 4vw, 2rem);
+                margin-top: clamp(1rem, 3vw, 1.8rem);
+            }
+            
+            /* Header adjustments */
+            nav {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Hero section adjustments */
+            #home {
+                padding-top: 6rem;
+                padding-bottom: 4rem;
+            }
+            
+            .hero-title {
+                font-size: clamp(2rem, 6vw, 2.8rem);
+            }
+            
+            .hero-tagline {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+            
+            .hero-buttons {
+                gap: 1rem;
+            }
+            
+            .hero-buttons a {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .trust-indicators {
+                margin-top: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
             }
         }
         
@@ -428,6 +511,11 @@
             .service-card:hover {
                 transform: translateY(-7px);
             }
+            
+            /* Hero section adjustments */
+            .hero-title {
+                font-size: clamp(2.5rem, 6vw, 3.2rem);
+            }
         }
         
         /* Desktop (1025px and up) */
@@ -439,7 +527,7 @@
         button, .btn-primary, .btn-outline, a, .nav-link {
             min-height: 44px;
             min-width: 44px;
-            padding: 0.7em 1.2em;
+            padding: 0.6em 1em;
         }
         
         /* Prevent horizontal scroll on mobile */
@@ -458,8 +546,8 @@
         
         /* Responsive floating elements */
         .floating-element {
-            width: clamp(1rem, 10vw, 4rem);
-            height: clamp(1rem, 10vw, 4rem);
+            width: clamp(1rem, 8vw, 3.5rem);
+            height: clamp(1rem, 8vw, 3.5rem);
         }
         
         /* Hacker-style custom mouse pointer */
@@ -531,19 +619,32 @@
 
         /* Better spacing for mobile */
         .responsive-section {
-            padding: clamp(2rem, 5vw, 4rem) 0;
+            padding: clamp(1.5rem, 4vw, 3rem) 0;
         }
 
         /* Improved button sizing */
         .responsive-btn {
-            padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
-            font-size: clamp(0.875rem, 3vw, 1.125rem);
+            padding: clamp(0.5rem, 1.8vw, 0.9rem) clamp(1rem, 3.5vw, 1.8rem);
+            font-size: clamp(0.85rem, 2.8vw, 1.1rem);
         }
 
         /* Better form inputs */
         .responsive-input {
-            padding: clamp(0.5rem, 2vw, 1rem);
-            font-size: clamp(0.875rem, 3vw, 1rem);
+            padding: clamp(0.5rem, 1.8vw, 0.9rem);
+            font-size: clamp(0.85rem, 2.8vw, 1rem);
+        }
+        
+        /* Compact header */
+        .compact-header {
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        
+        @media (min-width: 769px) {
+            .compact-header {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
         }
     </style>
 </head>
@@ -551,27 +652,27 @@
     <!-- Binary rain effect -->
     <div class="binary-rain" id="binaryRain"></div>
     
-    <!-- Navigation -->
-    <nav class="glass-card fixed w-full z-50 py-4 border-b border-primary/20">
+    <!-- Navigation - Made more compact -->
+    <nav class="glass-card fixed w-full z-50 compact-header border-b border-primary/20">
         <div class="responsive-w mx-auto responsive-px">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-12">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <span class="gradient-text title-font text-2xl font-bold tracking-wider">J²_CT</span>
+                        <span class="gradient-text title-font text-xl md:text-2xl font-bold tracking-wider">J²_CT</span>
                     </div>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-10">
-                        <a href="#home" class="nav-link text-white px-4 py-2 font-medium terminal-effect">home</a>
-                        <a href="#about" class="nav-link text-white px-4 py-2 font-medium terminal-effect">about</a>
-                        <a href="#services" class="nav-link text-white px-4 py-2 font-medium terminal-effect">services</a>
-                        <a href="#team" class="nav-link text-white px-4 py-2 font-medium terminal-effect">team</a>
-                        <a href="#contact" class="nav-link text-white px-4 py-2 font-medium terminal-effect">contact</a>
+                    <div class="ml-6 flex items-baseline space-x-6">
+                        <a href="#home" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">home</a>
+                        <a href="#about" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">about</a>
+                        <a href="#services" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">services</a>
+                        <a href="#team" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">team</a>
+                        <a href="#contact" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-white focus:outline-none" id="mobile-menu-button">
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button class="text-white focus:outline-none mobile-menu-button" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
@@ -581,18 +682,18 @@
         
         <!-- Mobile menu -->
         <div class="mobile-nav-container md:hidden glass-card w-full" id="mobile-menu">
-            <div class="responsive-px pt-3 pb-4 space-y-2">
-                <a href="#home" class="block px-4 py-3 font-medium text-white terminal-effect">home</a>
-                <a href="#about" class="block px-4 py-3 font-medium text-white terminal-effect">about</a>
-                <a href="#services" class="block px-4 py-3 font-medium text-white terminal-effect">services</a>
-                <a href="#team" class="block px-4 py-3 font-medium text-white terminal-effect">team</a>
-                <a href="#contact" class="block px-4 py-3 font-medium text-white terminal-effect">contact</a>
+            <div class="responsive-px pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-4 py-2 text-sm font-medium text-white terminal-effect">home</a>
+                <a href="#about" class="block px-4 py-2 text-sm font-medium text-white terminal-effect">about</a>
+                <a href="#services" class="block px-4 py-2 text-sm font-medium text-white terminal-effect">services</a>
+                <a href="#team" class="block px-4 py-2 text-sm font-medium text-white terminal-effect">team</a>
+                <a href="#contact" class="block px-4 py-2 text-sm font-medium text-white terminal-effect">contact</a>
             </div>
         </div>
     </nav>
     
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden scanline responsive-section">
+    <!-- Hero Section - Made more compact -->
+    <section id="home" class="min-h-[80vh] md:min-h-screen flex items-center justify-center pt-16 md:pt-20 relative overflow-hidden scanline responsive-section">
         <!-- Floating elements -->
         <div class="absolute top-1/4 left-1/4 floating-element rounded-full bg-primary/10 blur-xl"></div>
         <div class="absolute bottom-1/4 right-1/4 floating-element rounded-full bg-secondary/10 blur-xl"></div>
@@ -600,7 +701,7 @@
         
         <div class="responsive-w mx-auto responsive-px text-center relative z-10">
             <div class="flex justify-center responsive-mb">
-                <div class="px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 text-primary text-sm font-medium code-font">
+                <div class="px-3 py-1.5 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 text-primary text-xs md:text-sm font-medium code-font hero-tagline">
                     root@jsquare:~$ operational_since 2025
                 </div>
             </div>
@@ -608,36 +709,36 @@
             <h1 class="hero-title font-bold responsive-mb title-font">
                 <span class="gradient-text">> secure_your_digital_future()</span>
             </h1>
-            <p class="text-xl text-gray-300 max-w-4xl mx-auto responsive-mb leading-relaxed code-font terminal-cursor">
+            <p class="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto responsive-mb leading-relaxed code-font terminal-cursor">
                 // Cutting-edge cybersecurity solutions powered by AI and elite hackers<br>
                 // We protect your business from evolving digital threats
             </p>
-            <div class="flex flex-wrap justify-center responsive-gap">
-                <a href="#services" class="btn-primary font-bold py-4 px-10 rounded-full text-lg responsive-btn">
+            <div class="flex flex-wrap justify-center responsive-gap hero-buttons">
+                <a href="#services" class="btn-primary font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-base md:text-lg responsive-btn">
                     $ explore_services
                 </a>
-                <a href="#contact" class="btn-outline font-bold py-4 px-10 rounded-full text-lg code-font responsive-btn">
+                <a href="#contact" class="btn-outline font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-base md:text-lg code-font responsive-btn">
                     $ get_protected
                 </a>
             </div>
             
             <!-- Trust indicators -->
-            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 responsive-gap max-w-6xl mx-auto">
+            <div class="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 responsive-gap max-w-6xl mx-auto trust-indicators">
                 <div class="glass-card responsive-padding rounded-xl">
-                    <div class="text-4xl font-bold gradient-text responsive-mb">5+</div>
-                    <div class="text-gray-300 code-font">clients_secured</div>
+                    <div class="text-3xl md:text-4xl font-bold gradient-text responsive-mb">5+</div>
+                    <div class="text-gray-300 text-sm md:text-base code-font">clients_secured</div>
                 </div>
                 <div class="glass-card responsive-padding rounded-xl">
-                    <div class="text-4xl font-bold gradient-text responsive-mb">100%</div>
-                    <div class="text-gray-300 code-font">success_rate</div>
+                    <div class="text-3xl md:text-4xl font-bold gradient-text responsive-mb">100%</div>
+                    <div class="text-gray-300 text-sm md:text-base code-font">success_rate</div>
                 </div>
                 <div class="glass-card responsive-padding rounded-xl">
-                    <div class="text-4xl font-bold gradient-text responsive-mb">24/7</div>
-                    <div class="text-gray-300 code-font">monitoring</div>
+                    <div class="text-3xl md:text-4xl font-bold gradient-text responsive-mb">24/7</div>
+                    <div class="text-gray-300 text-sm md:text-base code-font">monitoring</div>
                 </div>
                 <div class="glass-card responsive-padding rounded-xl">
-                    <div class="text-4xl font-bold gradient-text responsive-mb">4</div>
-                    <div class="text-gray-300 code-font">elite_hackers</div>
+                    <div class="text-3xl md:text-4xl font-bold gradient-text responsive-mb">4</div>
+                    <div class="text-gray-300 text-sm md:text-base code-font">elite_hackers</div>
                 </div>
             </div>
         </div>
@@ -656,7 +757,7 @@
                     <span class="gradient-text">> innovative_security()</span>
                 </h2>
                 <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-                <p class="text-gray-400 max-w-3xl mx-auto mt-8 text-xl code-font">
+                <p class="text-gray-400 max-w-3xl mx-auto mt-6 md:mt-8 text-lg md:text-xl code-font">
                     // Combining cutting-edge technology with elite security expertise
                 </p>
             </div>
@@ -664,32 +765,32 @@
             <div class="flex flex-col lg:flex-row items-center responsive-gap">
                 <div class="lg:w-1/2 w-full">
                     <div class="glass-card responsive-padding rounded-2xl">
-                        <h3 class="text-3xl font-bold responsive-mb gradient-text">$ our_approach</h3>
-                        <p class="text-gray-300 responsive-mb text-lg leading-relaxed">
+                        <h3 class="text-2xl md:text-3xl font-bold responsive-mb gradient-text">$ our_approach</h3>
+                        <p class="text-gray-300 responsive-mb text-base md:text-lg leading-relaxed">
                             At J Square Cyber Tech, we believe cybersecurity should be offensive, not defensive. Our methodology combines zero-day exploits, behavioral analysis, and machine learning to anticipate attacks before they happen.
                         </p>
-                        <p class="text-gray-300 responsive-mb text-lg leading-relaxed code-font terminal-cursor">
+                        <p class="text-gray-300 responsive-mb text-base md:text-lg leading-relaxed code-font terminal-cursor">
                             > developed proprietary algorithms<br>
                             > detects anomalies in real-time<br>
                             > 78% fewer false positives<br>
                             > continuous threat research
                         </p>
-                        <div class="mt-10 grid grid-cols-2 responsive-gap">
+                        <div class="mt-8 md:mt-10 grid grid-cols-2 responsive-gap">
                             <div class="glass-card responsive-padding rounded-xl">
-                                <div class="text-primary text-3xl responsive-mb">
+                                <div class="text-primary text-2xl md:text-3xl responsive-mb">
                                     <i class="fas fa-bolt"></i>
                                 </div>
-                                <h4 class="text-xl font-bold responsive-mb">Real-time Protection</h4>
-                                <p class="text-gray-400 code-font">
+                                <h4 class="text-lg md:text-xl font-bold responsive-mb">Real-time Protection</h4>
+                                <p class="text-gray-400 text-sm md:text-base code-font">
                                     live_monitoring()
                                 </p>
                             </div>
                             <div class="glass-card responsive-padding rounded-xl">
-                                <div class="text-secondary text-3xl responsive-mb">
+                                <div class="text-secondary text-2xl md:text-3xl responsive-mb">
                                     <i class="fas fa-robot"></i>
                                 </div>
-                                <h4 class="text-xl font-bold responsive-mb">AI-Powered</h4>
-                                <p class="text-gray-400 code-font">
+                                <h4 class="text-lg md:text-xl font-bold responsive-mb">AI-Powered</h4>
+                                <p class="text-gray-400 text-sm md:text-base code-font">
                                     Smart scan()
                                 </p>
                             </div>
@@ -700,40 +801,40 @@
                     <div class="relative">
                         <div class="glass-card responsive-padding rounded-2xl">
                             <div class="flex items-center responsive-mb">
-                                <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-2xl font-bold text-dark mr-6">
+                                <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-xl md:text-2xl font-bold text-dark mr-4 md:mr-6">
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-2xl font-bold">$ our_mission</h3>
-                                    <p class="text-gray-400 code-font">// redefine_cybersecurity_standards</p>
+                                    <h3 class="text-xl md:text-2xl font-bold">$ our_mission</h3>
+                                    <p class="text-gray-400 text-sm md:text-base code-font">// redefine_cybersecurity_standards</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300 responsive-mb text-lg leading-relaxed">
+                            <p class="text-gray-300 responsive-mb text-base md:text-lg leading-relaxed">
                                 We're committed to creating security solutions that don't just protect, but enable business growth. Our platform integrates seamlessly with your existing infrastructure while providing military-grade protection.
                             </p>
                         </div>
                         
-                        <div class="glass-card responsive-padding rounded-2xl mt-8">
-                            <h3 class="text-2xl font-bold responsive-mb gradient-text">$ our_journey</h3>
+                        <div class="glass-card responsive-padding rounded-2xl mt-6 md:mt-8">
+                            <h3 class="text-xl md:text-2xl font-bold responsive-mb gradient-text">$ our_journey</h3>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
                                 <div class="glass-card responsive-padding rounded-xl responsive-mb">
-                                    <h4 class="font-bold text-xl mb-2">2025 - Foundation</h4>
-                                    <p class="text-gray-300 code-font">launched_with_vision()</p>
+                                    <h4 class="font-bold text-lg md:text-xl mb-2">2025 - Foundation</h4>
+                                    <p class="text-gray-300 text-sm md:text-base code-font">launched_with_vision()</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
                                 <div class="glass-card responsive-padding rounded-xl responsive-mb">
-                                    <h4 class="font-bold text-xl mb-2">2026 - Breakthrough</h4>
-                                    <p class="text-gray-300 code-font">developed_proprietary_algorithms()</p>
+                                    <h4 class="font-bold text-lg md:text-xl mb-2">2026 - Breakthrough</h4>
+                                    <p class="text-gray-300 text-sm md:text-base code-font">developed_proprietary_algorithms()</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
                                 <div class="glass-card responsive-padding rounded-xl">
-                                    <h4 class="font-bold text-xl mb-2">Future - Innovation</h4>
-                                    <p class="text-gray-300 code-font">quantum_resistant_cryptography()</p>
+                                    <h4 class="font-bold text-lg md:text-xl mb-2">Future - Innovation</h4>
+                                    <p class="text-gray-300 text-sm md:text-base code-font">quantum_resistant_cryptography()</p>
                                 </div>
                             </div>
                         </div>
@@ -754,18 +855,18 @@
                 <h2 class="section-title font-bold title-font responsive-mb">
                     <span class="gradient-text">> advanced_services()</span>
                 </h2>
-                <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-10"></div>
-                <p class="text-gray-400 max-w-3xl mx-auto mt-8 text-xl code-font">
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-8 md:mb-10"></div>
+                <p class="text-gray-400 max-w-3xl mx-auto mt-6 md:mt-8 text-lg md:text-xl code-font">
                     // Comprehensive protection tailored to your business needs
                 </p>
                 <!-- Startup Trust Section -->
-                <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="mt-8 md:mt-10 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
                     <div class="glass-card responsive-padding rounded-2xl flex-1 text-left">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-user-shield text-primary text-3xl mr-4"></i>
-                            <h4 class="text-xl font-bold gradient-text">Why Trust a Startup?</h4>
+                        <div class="flex items-center mb-3 md:mb-4">
+                            <i class="fas fa-user-shield text-primary text-2xl md:text-3xl mr-3 md:mr-4"></i>
+                            <h4 class="text-lg md:text-xl font-bold gradient-text">Why Trust a Startup?</h4>
                         </div>
-                        <ul class="list-disc pl-6 text-gray-300 code-font space-y-2">
+                        <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                             <li>Personalized attention and direct access to our founders</li>
                             <li>Agile, innovative, and always up-to-date with the latest threats</li>
                             <li>Transparent communication and honest advice—no corporate jargon</li>
@@ -774,11 +875,11 @@
                         </ul>
                     </div>
                     <div class="glass-card responsive-padding rounded-2xl flex-1 text-left">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-handshake text-secondary text-3xl mr-4"></i>
-                            <h4 class="text-xl font-bold gradient-text">Our Promise</h4>
+                        <div class="flex items-center mb-3 md:mb-4">
+                            <i class="fas fa-handshake text-secondary text-2xl md:text-3xl mr-3 md:mr-4"></i>
+                            <h4 class="text-lg md:text-xl font-bold gradient-text">Our Promise</h4>
                         </div>
-                        <ul class="list-disc pl-6 text-gray-300 code-font space-y-2">
+                        <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                             <li>100% confidentiality and data privacy</li>
                             <li>Clear, fair pricing—no hidden fees</li>
                             <li>We treat your business as if it were our own</li>
@@ -793,24 +894,24 @@
                 <!-- Service 1 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-primary text-5xl responsive-mb">
+                        <div class="text-primary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-search-lock"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Penetration Testing</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Penetration Testing</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Simulate sophisticated cyber attacks to uncover vulnerabilities before criminals exploit them.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 web_app_testing()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 cloud_infrastructure()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 social_engineering()
                             </li>
                         </ul>
@@ -820,24 +921,24 @@
                 <!-- Service 2 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-secondary text-5xl responsive-mb">
+                        <div class="text-secondary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-shield-virus"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Threat Intelligence</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Threat Intelligence</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Proactive monitoring and analysis of emerging threats targeting your industry.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 dark_web_monitoring()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 attack_surface_mapping()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 predictive_analytics()
                             </li>
                         </ul>
@@ -847,24 +948,24 @@
                 <!-- Service 3 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-primary text-5xl responsive-mb">
+                        <div class="text-primary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-cloud"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Cloud Security</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Cloud Security</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Comprehensive protection for your cloud infrastructure across all major platforms.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 cspm_implementation()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 iam_optimization()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 data_encryption()
                             </li>
                         </ul>
@@ -874,24 +975,24 @@
                 <!-- Service 4 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-secondary text-5xl responsive-mb">
+                        <div class="text-secondary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-user-secret"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Red Teaming</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Red Teaming</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Real-world attack simulations to test your organization's detection and response capabilities.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 physical_security_testing()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 purple_team_exercises()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 adversary_emulation()
                             </li>
                         </ul>
@@ -901,24 +1002,24 @@
                 <!-- Service 5 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-primary text-5xl responsive-mb">
+                        <div class="text-primary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Secure Development</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Secure Development</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Integrate security into your SDLC with our DevSecOps consulting services.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 code_review()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 sast/dast_implementation()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-primary mr-3"></i>
+                                <i class="fas fa-check-circle text-primary mr-2 md:mr-3"></i>
                                 container_security()
                             </li>
                         </ul>
@@ -928,24 +1029,24 @@
                 <!-- Service 6 -->
                 <div class="service-card">
                     <div class="glass-card h-full responsive-padding rounded-2xl">
-                        <div class="text-secondary text-5xl responsive-mb">
+                        <div class="text-secondary text-4xl md:text-5xl responsive-mb">
                             <i class="fas fa-headset"></i>
                         </div>
-                        <h3 class="text-2xl font-bold responsive-mb">Managed Security</h3>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb">Managed Security</h3>
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             24/7 monitoring and management of your security infrastructure by our experts.
                         </p>
-                        <ul class="text-gray-400 space-y-3 code-font">
+                        <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 siem_management()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 threat_hunting()
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check-circle text-secondary mr-3"></i>
+                                <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
                                 incident_response()
                             </li>
                         </ul>
@@ -954,13 +1055,13 @@
             </div>
             
             <!-- CTA -->
-            <div class="mt-20 text-center">
+            <div class="mt-16 md:mt-20 text-center">
                 <div class="glass-card responsive-padding rounded-2xl inline-block">
-                    <h3 class="text-3xl font-bold responsive-mb gradient-text">$ need_custom_solutions?</h3>
-                    <p class="text-gray-300 max-w-3xl mx-auto responsive-mb text-xl leading-relaxed">
+                    <h3 class="text-2xl md:text-3xl font-bold responsive-mb gradient-text">$ need_custom_solutions?</h3>
+                    <p class="text-gray-300 max-w-3xl mx-auto responsive-mb text-lg md:text-xl leading-relaxed">
                         We specialize in developing bespoke security architectures for unique business challenges.
                     </p>
-                    <a href="#contact" class="btn-primary font-bold py-4 px-10 rounded-full text-lg inline-block responsive-btn">
+                    <a href="#contact" class="btn-primary font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-base md:text-lg inline-block responsive-btn">
                         $ discuss_needs
                     </a>
                 </div>
@@ -982,7 +1083,7 @@
                     <span class="gradient-text">> meet_our_team()</span>
                 </h2>
                 <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-                <p class="text-gray-400 max-w-3xl mx-auto mt-8 text-xl code-font">
+                <p class="text-gray-400 max-w-3xl mx-auto mt-6 md:mt-8 text-lg md:text-xl code-font">
                     // Cybersecurity professionals dedicated to protecting your business
                 </p>
             </div>
@@ -992,21 +1093,21 @@
                 <div class="glass-card rounded-2xl overflow-hidden">
                     <div class="responsive-padding">
                         <div class="flex flex-col md:flex-row items-center responsive-mb">
-                            <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold text-dark mb-6 md:mb-0 md:mr-8">
+                            <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
                                 JM
                             </div>
                             <div class="text-center md:text-left">
-                                <h3 class="text-2xl font-bold gradient-text">Jeel Makwana</h3>
-                                <p class="text-gray-400 code-font">// founder_ceo</p>
+                                <h3 class="text-xl md:text-2xl font-bold gradient-text">Jeel Makwana</h3>
+                                <p class="text-gray-400 text-sm md:text-base code-font">// founder_ceo</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Cybersecurity visionary with expertise in offensive security and AI-driven threat detection. Former lead security researcher at multiple Fortune 500 companies.<br>
-                            <span class="block mt-4">Jeel is passionate about empowering businesses to defend against modern cyber threats. He is known for his hands-on approach, commitment to continuous learning, and ability to translate complex security concepts into actionable strategies for clients. Jeel regularly mentors aspiring cybersecurity professionals and contributes to open-source security projects.</span>
+                            <span class="block mt-3 md:mt-4">Jeel is passionate about empowering businesses to defend against modern cyber threats. He is known for his hands-on approach, commitment to continuous learning, and ability to translate complex security concepts into actionable strategies for clients. Jeel regularly mentors aspiring cybersecurity professionals and contributes to open-source security projects.</span>
                         </p>
                         <div class="responsive-mb">
-                            <h4 class="text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
-                            <ul class="list-disc pl-6 text-gray-300 code-font space-y-2">
+                            <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
+                            <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                                 <li>CNSP (Certified Network Security Practitioner)</li>
                                 <li>Jr Penetration Tester by TryHackMe</li>
                                 <li>Certified Penetration Tester & Digital Forensics by Cyber Security India</li>
@@ -1024,20 +1125,20 @@
                 <div class="glass-card rounded-2xl overflow-hidden">
                     <div class="responsive-padding">
                         <div class="flex flex-col md:flex-row items-center responsive-mb">
-                            <div class="responsive-circle rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center text-4xl font-bold text-dark mb-6 md:mb-0 md:mr-8">
+                            <div class="responsive-circle rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
                                 AS
                             </div>
                             <div class="text-center md:text-left">
-                                <h3 class="text-2xl font-bold gradient-text">Ajay Sahani</h3>
-                                <p class="text-gray-400 code-font">// security_architect</p>
+                                <h3 class="text-xl md:text-2xl font-bold gradient-text">Ajay Sahani</h3>
+                                <p class="text-gray-400 text-sm md:text-base code-font">// security_architect</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Certified Ethical Hacker specializing in cloud security and compliance frameworks. Developed security protocols adopted by major cloud providers.
                         </p>
                         <div class="responsive-mb">
-                            <h4 class="text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
-                            <ul class="list-disc pl-6 text-gray-300 code-font space-y-2">
+                            <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
+                            <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                                 <li>CNSP (Certified Network Security Practitioner)</li>
                                 <li>Jr Penetration Tester by TryHackMe</li>
                             </ul>
@@ -1051,15 +1152,15 @@
                 <div class="glass-card rounded-2xl overflow-hidden">
                     <div class="responsive-padding">
                         <div class="flex flex-col md:flex-row items-center responsive-mb">
-                            <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-dark mb-6 md:mb-0 md:mr-8">
+                            <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
                                 BP
                             </div>
                             <div class="text-center md:text-left">
-                                <h3 class="text-2xl font-bold gradient-text">Bhumil Patel</h3>
-                                <p class="text-gray-400 code-font">// code_review</p>
+                                <h3 class="text-xl md:text-2xl font-bold gradient-text">Bhumil Patel</h3>
+                                <p class="text-gray-400 text-sm md:text-base code-font">// code_review</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Code Reviewer with expertise in identifying vulnerabilities and ensuring code quality. Bhumil is committed to fostering a culture of security within development teams.
                         </p>
                         <div class="responsive-mb">
@@ -1073,20 +1174,20 @@
                 <div class="glass-card rounded-2xl overflow-hidden">
                     <div class="responsive-padding">
                         <div class="flex flex-col md:flex-row items-center responsive-mb">
-                            <div class="responsive-circle rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-4xl font-bold text-dark mb-6 md:mb-0 md:mr-8">
+                            <div class="responsive-circle rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
                                 MP
                             </div>
                             <div class="text-center md:text-left">
-                                <h3 class="text-2xl font-bold gradient-text">Mohil Parekh</h3>
-                                <p class="text-gray-400 code-font">// security_analyst</p>
+                                <h3 class="text-xl md:text-2xl font-bold gradient-text">Mohil Parekh</h3>
+                                <p class="text-gray-400 text-sm md:text-base code-font">// security_analyst</p>
                             </div>
                         </div>
-                        <p class="text-gray-300 responsive-mb leading-relaxed">
+                        <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
                             Security Analyst with a focus on threat detection and incident response. Ajay is passionate about staying ahead of cyber threats and ensuring client systems are always protected.
                         </p>
                         <div class="responsive-mb">
-                            <h4 class="text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
-                            <ul class="list-disc pl-6 text-gray-300 code-font space-y-2">
+                            <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
+                            <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                                 <li>Certified Security Analyst</li>
                                 <li>CNSP (Certified Network Security Practitioner)</li>
                             </ul>
@@ -1098,12 +1199,12 @@
             </div>
             
             <!-- Join Team CTA -->
-            <div class="mt-20 text-center">
-                <h3 class="text-3xl font-bold responsive-mb gradient-text">$ join_our_team()</h3>
-                <p class="text-gray-300 max-w-3xl mx-auto responsive-mb text-xl leading-relaxed">
+            <div class="mt-16 md:mt-20 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold responsive-mb gradient-text">$ join_our_team()</h3>
+                <p class="text-gray-300 max-w-3xl mx-auto responsive-mb text-lg md:text-xl leading-relaxed">
                     We're always looking for passionate security professionals to join our mission of redefining cybersecurity.
                 </p>
-                <a href="#contact" class="btn-outline font-bold py-4 px-10 rounded-full text-lg inline-block code-font responsive-btn">
+                <a href="#contact" class="btn-outline font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-base md:text-lg inline-block code-font responsive-btn">
                     $ explore_opportunities
                 </a>
             </div>
@@ -1122,7 +1223,7 @@
                     <span class="gradient-text">> get_in_touch()</span>
                 </h2>
                 <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
-                <p class="text-gray-400 max-w-3xl mx-auto mt-8 text-xl code-font">
+                <p class="text-gray-400 max-w-3xl mx-auto mt-6 md:mt-8 text-lg md:text-xl code-font">
                     // Ready to secure your business? Contact us for a consultation.
                 </p>
             </div>
@@ -1130,15 +1231,15 @@
             <div class="flex flex-col lg:flex-row responsive-gap">
                 <div class="lg:w-1/2 w-full">
                     <!-- FAQ Section -->
-                    <div class="mt-16">
-                        <h3 class="text-2xl font-bold responsive-mb gradient-text">$ common_questions</h3>
-                        <div class="space-y-6">
+                    <div class="mt-12 md:mt-16">
+                        <h3 class="text-xl md:text-2xl font-bold responsive-mb gradient-text">$ common_questions</h3>
+                        <div class="space-y-4 md:space-y-6">
                             <div class="glass-card responsive-padding rounded-xl">
                                 <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(1)">
-                                    <span class="font-medium text-white text-xl code-font">> response_time_for_emergencies?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-xl" id="faq-icon-1"></i>
+                                    <span class="font-medium text-white text-lg md:text-xl code-font">> response_time_for_emergencies?</span>
+                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-1"></i>
                                 </button>
-                                <div class="hidden mt-4 text-gray-300 text-lg code-font" id="faq-content-1">
+                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-1">
                                     > emergency_response_team: available_24/7<br>
                                     > containment_procedures: within_30_minutes
                                 </div>
@@ -1146,10 +1247,10 @@
                             
                             <div class="glass-card responsive-padding rounded-xl">
                                 <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(2)">
-                                    <span class="font-medium text-white text-xl code-font">> offer_compliance_assistance?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-xl" id="faq-icon-2"></i>
+                                    <span class="font-medium text-white text-lg md:text-xl code-font">> offer_compliance_assistance?</span>
+                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-2"></i>
                                 </button>
-                                <div class="hidden mt-4 text-gray-299 text-lg code-font" id="faq-content-2">
+                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-2">
                                     > compliance_specialization: true<br>
                                     > frameworks: [gdpr, hipaa, pci-dss, soc2]
                                 </div>
@@ -1157,10 +1258,10 @@
                             
                             <div class="glass-card responsive-padding rounded-xl">
                                 <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(3)">
-                                    <span class="font-medium text-white text-xl code-font">> what_makes_approach_unique?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-xl" id="faq-icon-3"></i>
+                                    <span class="font-medium text-white text-lg md:text-xl code-font">> what_makes_approach_unique?</span>
+                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-3"></i>
                                 </button>
-                                <div class="hidden mt-4 text-gray-300 text-lg code-font" id="faq-content-3">
+                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-3">
                                     > human_expertise + proprietary_ai<br>
                                     > anomaly_detection_accuracy: 92%<br>
                                     > false_positives_reduction: 78%
@@ -1172,43 +1273,43 @@
                 
                 <div class="lg:w-1/2 w-full responsive-mt lg:mt-0">
                     <div class="glass-card responsive-padding rounded-2xl h-full">
-                        <h3 class="text-3xl font-bold responsive-mb gradient-text">$ contact_information</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold responsive-mb gradient-text">$ contact_information</h3>
                         
-                        <div class="space-y-8">
+                        <div class="space-y-6 md:space-y-8">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 text-primary text-2xl mt-1">
+                                <div class="flex-shrink-0 text-primary text-xl md:text-2xl mt-1">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="ml-6">
-                                    <h4 class="text-xl font-medium text-white">$ email</h4>
-                                    <p class="text-gray-300 text-lg code-font">jsquarecybertech@gmail.com</p>
+                                <div class="ml-4 md:ml-6">
+                                    <h4 class="text-lg md:text-xl font-medium text-white">$ email</h4>
+                                    <p class="text-gray-300 text-base md:text-lg code-font">jsquarecybertech@gmail.com</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 text-primary text-2xl mt-1">
+                                <div class="flex-shrink-0 text-primary text-xl md:text-2xl mt-1">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
-                                <div class="ml-6">
-                                    <h4 class="text-xl font-medium text-white">$ phone</h4>
-                                    <p class="text-gray-300 text-lg code-font">+91 8128709152</p>
+                                <div class="ml-4 md:ml-6">
+                                    <h4 class="text-lg md:text-xl font-medium text-white">$ phone</h4>
+                                    <p class="text-gray-300 text-base md:text-lg code-font">+91 8128709152</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 text-primary text-2xl mt-1">
+                                <div class="flex-shrink-0 text-primary text-xl md:text-2xl mt-1">
                                     <i class="fab fa-instagram"></i>
                                 </div>
-                                <div class="ml-6">
-                                    <h4 class="text-xl font-medium text-white">$ instagram</h4>
-                                    <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-300 hover:text-primary transition text-lg code-font">@jsquare_cybertech</a>
+                                <div class="ml-4 md:ml-6">
+                                    <h4 class="text-lg md:text-xl font-medium text-white">$ instagram</h4>
+                                    <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-300 hover:text-primary transition text-base md:text-lg code-font">@jsquare_cybertech</a>
                                 </div>
                             </div>
                             
-                            <div class="pt-8 border-t border-gray-800">
-                                <h4 class="text-xl font-medium text-white responsive-mb">$ follow_us</h4>
-                                <div class="flex space-x-6">
-                                    <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-400 hover:text-primary transition text-3xl">
+                            <div class="pt-6 md:pt-8 border-t border-gray-800">
+                                <h4 class="text-lg md:text-xl font-medium text-white responsive-mb">$ follow_us</h4>
+                                <div class="flex space-x-4 md:space-x-6">
+                                    <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-400 hover:text-primary transition text-2xl md:text-3xl">
                                        <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
@@ -1224,66 +1325,66 @@
     <section class="responsive-py relative overflow-hidden responsive-section">
         <div class="responsive-w mx-auto responsive-px text-center">
             <h3 class="section-title font-bold title-font responsive-mb gradient-text">> cyber_threats & fraud_awareness</h3>
-            <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-10"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-8 md:mb-10"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-primary mb-4"><i class="fas fa-envelope-open-text"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Phishing Awareness</h4>
-                    <p class="text-gray-300 code-font mb-2">Never click suspicious links or download attachments from unknown sources. Always verify the sender's email address and look for subtle misspellings.</p>
-                    <span class="inline-block bg-primary/10 text-primary code-font px-4 py-1 rounded-full mt-2">#think_before_you_click</span>
+                    <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-envelope-open-text"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Phishing Awareness</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Never click suspicious links or download attachments from unknown sources. Always verify the sender's email address and look for subtle misspellings.</p>
+                    <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#think_before_you_click</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-secondary mb-4"><i class="fas fa-key"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Password Hygiene</h4>
-                    <p class="text-gray-300 code-font mb-2">Use strong, unique passwords for every account. Enable two-factor authentication wherever possible and never share your passwords.</p>
-                    <span class="inline-block bg-secondary/10 text-secondary code-font px-4 py-1 rounded-full mt-2">#lock_it_down</span>
+                    <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-key"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Password Hygiene</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Use strong, unique passwords for every account. Enable two-factor authentication wherever possible and never share your passwords.</p>
+                    <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#lock_it_down</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-accent mb-4"><i class="fas fa-user-secret"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Social Engineering</h4>
-                    <p class="text-gray-300 code-font mb-2">Fraudsters may impersonate trusted contacts or officials. Always verify requests for sensitive information, even if they seem urgent or familiar.</p>
-                    <span class="inline-block bg-accent/10 text-accent code-font px-4 py-1 rounded-full mt-2">#verify_requests</span>
+                    <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-user-secret"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Social Engineering</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Fraudsters may impersonate trusted contacts or officials. Always verify requests for sensitive information, even if they seem urgent or familiar.</p>
+                    <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#verify_requests</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-primary mb-4"><i class="fas fa-mobile-alt"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Mobile Security</h4>
-                    <p class="text-gray-300 code-font mb-2">Install apps only from official stores. Keep your device updated and avoid using public Wi-Fi for sensitive transactions.</p>
-                    <span class="inline-block bg-primary/10 text-primary code-font px-4 py-1 rounded-full mt-2">#secure_your_device</span>
+                    <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-mobile-alt"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Mobile Security</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Install apps only from official stores. Keep your device updated and avoid using public Wi-Fi for sensitive transactions.</p>
+                    <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#secure_your_device</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-secondary mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Update & Patch</h4>
-                    <p class="text-gray-300 code-font mb-2">Regularly update your software and operating systems. Patches fix vulnerabilities that hackers exploit.</p>
-                    <span class="inline-block bg-secondary/10 text-secondary code-font px-4 py-1 rounded-full mt-2">#update_now</span>
+                    <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Update & Patch</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Regularly update your software and operating systems. Patches fix vulnerabilities that hackers exploit.</p>
+                    <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#update_now</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-5xl text-accent mb-4"><i class="fas fa-exclamation-triangle"></i></div>
-                    <h4 class="text-xl font-bold mb-2 gradient-text">Report Suspicious Activity</h4>
-                    <p class="text-gray-300 code-font mb-2">If you notice anything unusual—unexpected emails, login attempts, or transactions—report it immediately to your IT/security team or service provider.</p>
-                    <span class="inline-block bg-accent/10 text-accent code-font px-4 py-1 rounded-full mt-2">#report_fraud</span>
+                    <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Report Suspicious Activity</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">If you notice anything unusual—unexpected emails, login attempts, or transactions—report it immediately to your IT/security team or service provider.</p>
+                    <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#report_fraud</span>
                 </div>
             </div>
             <!-- Banking Fraud Awareness Section -->
-            <div class="mt-16">
-                <div class="glass-card responsive-padding rounded-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8 shadow-lg border-2 border-accent/40 animate-pulse">
-                    <div class="flex-shrink-0 text-accent text-6xl mb-6 md:mb-0">
+            <div class="mt-12 md:mt-16">
+                <div class="glass-card responsive-padding rounded-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 shadow-lg border-2 border-accent/40 animate-pulse">
+                    <div class="flex-shrink-0 text-accent text-5xl md:text-6xl mb-4 md:mb-0">
                         <i class="fas fa-university"></i>
                     </div>
                     <div class="text-left">
-                        <h4 class="text-2xl font-bold mb-2 gradient-text">Banking Fraud: Stay One Step Ahead</h4>
-                        <ul class="list-disc pl-6 text-gray-300 code-font space-y-2 mb-3">
+                        <h4 class="text-xl md:text-2xl font-bold mb-2 gradient-text">Banking Fraud: Stay One Step Ahead</h4>
+                        <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2 mb-2 md:mb-3">
                             <li>Never share your OTP, PIN, or passwords—even with someone claiming to be from your bank.</li>
                             <li>Always verify calls, emails, or SMS about your account by contacting your bank directly.</li>
                             <li>Check your bank statements regularly for unauthorized transactions.</li>
                             <li>Use official banking apps/websites—avoid links sent via SMS or email.</li>
                             <li>Report lost cards or suspicious activity immediately to your bank's helpline.</li>
                         </ul>
-                        <span class="inline-block bg-accent/10 text-accent code-font px-4 py-1 rounded-full mt-2">#safe_banking #fraud_alert</span>
+                        <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#safe_banking #fraud_alert</span>
                     </div>
                 </div>
             </div>
-            <div class="mt-12 text-center">
-                <span class="inline-block bg-gradient-to-r from-primary to-secondary text-dark code-font px-6 py-3 rounded-full text-lg font-bold shadow-lg animate-pulse">
+            <div class="mt-10 md:mt-12 text-center">
+                <span class="inline-block bg-gradient-to-r from-primary to-secondary text-dark text-sm md:text-base code-font px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg animate-pulse">
                     Stay aware. Stay secure. Share these tips with your friends & family!
                 </span>
             </div>
@@ -1295,212 +1396,36 @@
         <div class="responsive-w mx-auto responsive-px">
             <div class="grid grid-cols-1 md:grid-cols-4 responsive-gap">
                 <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold responsive-mb title-font gradient-text">J Square Cyber Tech</h3>
-                    <p class="text-gray-400 responsive-mb text-lg code-font">
+                    <h3 class="text-xl md:text-2xl font-bold responsive-mb title-font gradient-text">J Square Cyber Tech</h3>
+                    <p class="text-gray-400 text-sm md:text-base code-font">
                         > next-gen_cybersecurity_solutions<br>
                         > powered_by_ai_and_elite_hackers
                     </p>
-                    <div class="flex space-x-6">
-                        <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-400 hover:text-primary transition text-2xl">
+                    <div class="flex space-x-4 md:space-x-6">
+                        <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-400 hover:text-primary transition text-xl md:text-2xl">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                    <div class="mt-6">
-                        <a href="https://www.linkedin.com/in/j-square-cyber-tech-790b48257" target="_blank" class="inline-block bg-primary/10 text-primary code-font px-4 py-2 rounded-full hover:bg-primary/20 transition font-semibold">
-                            <i class="fab fa-linkedin mr-2"></i>Connect with us on LinkedIn
+                    <div class="mt-4 md:mt-6">
+                        <a href="https://www.linkedin.com/in/j-square-cyber-tech-790b48257" target="_blank" class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 md:py-2 rounded-full hover:bg-primary/20 transition font-semibold">
+                            <i class="fab fa-linkedin mr-1 md:mr-2"></i>Connect with us on LinkedIn
                         </a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-xl font-bold text-white responsive-mb">$ quick_links</h4>
-                    <ul class="space-y-3 code-font">
-                        <li><a href="#home" class="text-gray-400 hover:text-primary transition text-lg">> home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-primary transition text-lg">> about</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-primary transition text-lg">> services</a></li>
-                        <li><a href="#team" class="text-gray-400 hover:text-primary transition text-lg">> team</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition text-lg">> contact</a></li>
+                    <h4 class="text-lg md:text-xl font-bold text-white responsive-mb">$ quick_links</h4>
+                    <ul class="space-y-2 md:space-y-3 code-font">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition text-base md:text-lg">> home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition text-base md:text-lg">> about</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition text-base md:text-lg">> services</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-primary transition text-base md:text-lg">> team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition text-base md:text-lg">> contact</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-xl font-bold text-white responsive-mb">$ services</h4>
-                    <ul class="space-y-3 text-gray-400 text-lg code-font">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-primary mr-3"></i>
-                            penetration_testing()
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-primary mr-3"></i>
-                            threat_intelligence()
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-primary mr-3"></i>
-                            cloud_security()
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-primary mr-3"></i>
-                            incident_response()
-                        </li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-xl font-bold text-white responsive-mb">$ contact</h4>
-                    <ul class="space-y-3 text-gray-400 text-lg code-font">
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope text-primary mt-1 mr-3"></i>
-                            jsquarecybertech@gmail.com
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone-alt text-primary mt-1 mr-3"></i>
-                            +91 8128709152
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fab fa-instagram text-primary mt-1 mr-3"></i>
-                            <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="hover:underline">@jsquare_cybertech</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-primary/20 mt-16 pt-10 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-lg responsive-mb md:mb-0 code-font">
-                    > ©_2025_J_Square_Cyber_Tech<br>
-                    > all_rights_reserved
-                </p>
-                <div class="flex space-x-8 code-font">
-                    <a href="#" class="text-gray-500 hover:text-primary transition text-lg">> privacy</a>
-                    <a href="#" class="text-gray-500 hover:text-primary transition text-lg">> terms</a>
-                    <a href="#" class="text-gray-500 hover:text-primary transition text-lg">> cookies</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Back to top button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary text-dark flex items-center justify-center text-xl shadow-lg transition-all opacity-0 invisible">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('open');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (mobileMenu.classList.contains('open')) {
-                        mobileMenu.classList.remove('open');
-                    }
-                }
-            });
-        });
-        
-        // FAQ toggle function
-        function toggleFAQ(id) {
-            const content = document.getElementById(`faq-content-${id}`);
-            const icon = document.getElementById(`faq-icon-${id}`);
-            
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
-        
-        // Back to top button
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Binary rain effect
-        function createBinaryRain() {
-            const container = document.getElementById('binaryRain');
-            const digits = ['0', '1'];
-            
-            for (let i = 0; i < 50; i++) {
-                const digit = document.createElement('div');
-                digit.className = 'binary-digit';
-                digit.textContent = digits[Math.floor(Math.random() * digits.length)];
-                digit.style.left = `${Math.random() * 100}%`;
-                digit.style.animationDuration = `${5 + Math.random() * 10}s`;
-                digit.style.animationDelay = `${Math.random() * 5}s`;
-                container.appendChild(digit);
-            }
-        }
-        
-        createBinaryRain();
-        
-        // Terminal typing effect
-        function typeTerminalText() {
-            const elements = document.querySelectorAll('.terminal-cursor');
-            
-            elements.forEach(el => {
-                const text = el.textContent;
-                el.textContent = '';
-                let i = 0;
-                
-                function type() {
-                    if (i < text.length) {
-                        el.textContent += text.charAt(i);
-                        i++;
-                        setTimeout(type, Math.random() * 100);
-                    }
-                }
-                
-                setTimeout(type, 1000);
-            });
-        }
-        
-        // Run typing effect after page loads
-        window.addEventListener('load', function() {
-            setTimeout(typeTerminalText, 1000);
-        });
-        
-        // Hacker-style mouse pointer
-        (function() {
-            const cursor = document.createElement('div');
-            cursor.className = 'hacker-cursor';
-            document.body.appendChild(cursor);
-            document.body.style.cursor = 'none';
-            document.addEventListener('mousemove', function(e) {
-                cursor.style.transform = `translate(${e.clientX - 16}px, ${e.clientY - 16}px)`;
-            });
-            // Hide on touch devices
-            window.addEventListener('touchstart', function() {
-                cursor.style.display = 'none';
-                document.body.style.cursor = '';
-            }, { once: true });
-        })();
-    </script>
-</body>
+                    <h4 class="text-lg md:text-xl font-bold text-white responsive-mb">$ services</h4>
+                    <ul class="space-y-2 md:space-y-3 text-gray-400 text-sm md:text-base code-font">
+                        <li class="flex items
 </html>
