@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #00ff9d;
+            --primary: #01ff9d;
             --secondary: #00b8ff;
             --accent: #ff00aa;
             --dark: #0a0a0f;
@@ -655,13 +655,14 @@
     <!-- Navigation - Made more compact -->
     <nav class="glass-card fixed w-full z-50 compact-header border-b border-primary/20">
         <div class="responsive-w mx-auto responsive-px">
-            <div class="flex justify-between items-center h-12">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <span class="gradient-text title-font text-xl md:text-2xl font-bold tracking-wider">J²_CT</span>
-                    </div>
+            <div class="flex items-center justify-center h-12 relative">
+                <div class="flex-shrink-0 flex items-center absolute left-0 top-0 h-full pl-2">
+                    <span class="gradient-text title-font text-xl md:text-2xl font-bold tracking-wider">J² Cyber Tech</span>
                 </div>
-                <div class="hidden md:block">
+                <div class="flex-1 flex justify-center items-center h-full">
+                    <span class="gradient-text text-4xl md:text-5xl font-bold" style="font-family: 'Rajdhani', 'JetBrains Mono', serif;">ॐ</span>
+                </div>
+                <div class="hidden md:flex items-center absolute right-0 top-0 h-full pr-2">
                     <div class="ml-6 flex items-baseline space-x-6">
                         <a href="#home" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">home</a>
                         <a href="#about" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">about</a>
@@ -670,7 +671,7 @@
                         <a href="#contact" class="nav-link text-white px-3 py-1.5 text-sm md:text-base font-medium terminal-effect">contact</a>
                     </div>
                 </div>
-                <div class="md:hidden">
+                <div class="md:hidden absolute right-0 top-0 h-full flex items-center pr-2">
                     <button class="text-white focus:outline-none mobile-menu-button" id="mobile-menu-button">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -1102,8 +1103,8 @@
                             </div>
                         </div>
                         <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
-                            Cybersecurity visionary with expertise in offensive security and AI-driven threat detection. Former lead security researcher at multiple Fortune 500 companies.<br>
-                            <span class="block mt-3 md:mt-4">Jeel is passionate about empowering businesses to defend against modern cyber threats. He is known for his hands-on approach, commitment to continuous learning, and ability to translate complex security concepts into actionable strategies for clients. Jeel regularly mentors aspiring cybersecurity professionals and contributes to open-source security projects.</span>
+                            Cybersecurity specialist with deep expertise in offensive security and AI-powered threat detection. Hands-on contributor to red teaming, vulnerability research, and custom security solutions across startups and dynamic tech environments..<br>
+                            <span class="block mt-3 md:mt-4">Jeel is passionate about helping businesses stay ahead of evolving cyber threats through real-world testing and smart defense strategies. Known for a practical, no-fluff approach, he thrives on breaking down complex security challenges into clear, actionable solutions. Jeel actively mentors upcoming cybersecurity talent and contributes to open-source security projects that push the industry forward.</span>
                         </p>
                         <div class="responsive-mb">
                             <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
@@ -1116,7 +1117,8 @@
                                 <li>Published research on AI-based threat detection</li>
                             </ul>
                         </div>
-                        <div class="flex space-x-4">
+                        <div class="flex space-x-4 mt-4">
+                            <a href="https://www.linkedin.com/in/jeel-makwana-110267231" target="_blank" class="text-gray-400 hover:text-primary transition text-xl md:text-2xl"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1130,20 +1132,22 @@
                             </div>
                             <div class="text-center md:text-left">
                                 <h3 class="text-xl md:text-2xl font-bold gradient-text">Ajay Sahani</h3>
-                                <p class="text-gray-400 text-sm md:text-base code-font">// security_architect</p>
+                                <p class="text-gray-400 text-sm md:text-base code-font">// security_analyst</p>
                             </div>
                         </div>
                         <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
-                            Certified Ethical Hacker specializing in cloud security and compliance frameworks. Developed security protocols adopted by major cloud providers.
+                            Security Analyst with strong focus on threat detection, incident response, and system hardening. Experienced in identifying vulnerabilities across cloud and on-prem environments. Actively works on improving security posture through continuous monitoring and analysis.
                         </p>
                         <div class="responsive-mb">
                             <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
                             <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2">
                                 <li>CNSP (Certified Network Security Practitioner)</li>
                                 <li>Jr Penetration Tester by TryHackMe</li>
+                                <li>ISC2 certified </li>
                             </ul>
                         </div>
-                        <div class="flex space-x-4">
+                        <div class="flex space-x-4 mt-4">
+                            <a href="https://www.linkedin.com/in/ajay-sahani-38b948267" target="_blank" class="text-gray-400 hover:text-primary transition text-xl md:text-2xl"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1165,8 +1169,6 @@
                         </p>
                         <div class="responsive-mb">
                         </div>
-                        <div class="flex space-x-4">
-                        </div>
                     </div>
                 </div>
                 
@@ -1183,7 +1185,7 @@
                             </div>
                         </div>
                         <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
-                            Security Analyst with a focus on threat detection and incident response. Ajay is passionate about staying ahead of cyber threats and ensuring client systems are always protected.
+                            Security Analyst with a focus on threat detection and incident response. He is passionate about staying ahead of cyber threats and ensuring client systems are always protected.
                         </p>
                         <div class="responsive-mb">
                             <h4 class="text-lg md:text-xl font-bold gradient-text responsive-mb">Certifications & Achievements</h4>
@@ -1192,7 +1194,8 @@
                                 <li>CNSP (Certified Network Security Practitioner)</li>
                             </ul>
                         </div>
-                        <div class="flex space-x-4">
+                        <div class="flex space-x-4 mt-4">
+                            <a href="https://www.linkedin.com/in/mohil-parekh-a1a848233" target="_blank" class="text-gray-400 hover:text-primary transition text-xl md:text-2xl"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1216,7 +1219,6 @@
         <!-- Floating elements -->
         <div class="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-primary/10 blur-3xl"></div>
         <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
-        
         <div class="responsive-w mx-auto responsive-px">
             <div class="text-center responsive-mb">
                 <h2 class="section-title font-bold title-font responsive-mb">
@@ -1227,50 +1229,34 @@
                     // Ready to secure your business? Contact us for a consultation.
                 </p>
             </div>
-            
             <div class="flex flex-col lg:flex-row responsive-gap">
                 <div class="lg:w-1/2 w-full">
-                    <!-- FAQ Section -->
-                    <div class="mt-12 md:mt-16">
-                        <h3 class="text-xl md:text-2xl font-bold responsive-mb gradient-text">$ common_questions</h3>
-                        <div class="space-y-4 md:space-y-6">
-                            <div class="glass-card responsive-padding rounded-xl">
-                                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(1)">
-                                    <span class="font-medium text-white text-lg md:text-xl code-font">> response_time_for_emergencies?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-1"></i>
-                                </button>
-                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-1">
-                                    > emergency_response_team: available_24/7<br>
-                                    > containment_procedures: within_30_minutes
-                                </div>
-                            </div>
-                            
-                            <div class="glass-card responsive-padding rounded-xl">
-                                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(2)">
-                                    <span class="font-medium text-white text-lg md:text-xl code-font">> offer_compliance_assistance?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-2"></i>
-                                </button>
-                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-2">
-                                    > compliance_specialization: true<br>
-                                    > frameworks: [gdpr, hipaa, pci-dss, soc2]
-                                </div>
-                            </div>
-                            
-                            <div class="glass-card responsive-padding rounded-xl">
-                                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(3)">
-                                    <span class="font-medium text-white text-lg md:text-xl code-font">> what_makes_approach_unique?</span>
-                                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-3"></i>
-                                </button>
-                                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-3">
-                                    > human_expertise + proprietary_ai<br>
-                                    > anomaly_detection_accuracy: 92%<br>
-                                    > false_positives_reduction: 78%
-                                </div>
-                            </div>
+                    <!-- Contact Us Form moved here -->
+                    <div class="max-w-xl mx-auto glass-card responsive-padding rounded-2xl">
+                      <h2 class="text-2xl md:text-3xl font-bold gradient-text mb-6 text-center">Contact Us</h2>
+                      <form id="main-contact-form" class="space-y-5" autocomplete="off" action="https://formspree.io/f/xpwdglej" method="POST">
+                        <input type="hidden" name="_replyto" value="jsquarecybertech@gmail.com">
+                        <div>
+                          <label for="main-name" class="block text-gray-300 code-font mb-1">Name</label>
+                          <input type="text" id="main-name" name="name" class="responsive-input w-full rounded bg-black border border-primary/30 text-white code-font focus:outline-none focus:border-primary" required>
                         </div>
+                        <div>
+                          <label for="main-contact" class="block text-gray-300 code-font mb-1">Contact Number</label>
+                          <input type="tel" id="main-contact" name="contact" pattern="[0-9]{10,15}" class="responsive-input w-full rounded bg-black border border-primary/30 text-white code-font focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                          <label for="main-subject" class="block text-gray-300 code-font mb-1">Subject</label>
+                          <input type="text" id="main-subject" name="subject" class="responsive-input w-full rounded bg-black border border-primary/30 text-white code-font focus:outline-none focus:border-primary" required>
+                        </div>
+                        <div>
+                          <label for="main-message" class="block text-gray-300 code-font mb-1">Message</label>
+                          <textarea id="main-message" name="message" rows="4" class="responsive-input w-full rounded bg-black border border-primary/30 text-white code-font focus:outline-none focus:border-primary" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full font-bold py-3 rounded-full text-base md:text-lg code-font">Send Message</button>
+                        <div id="main-form-status" class="mt-2 text-sm text-center"></div>
+                      </form>
                     </div>
                 </div>
-                
                 <div class="lg:w-1/2 w-full responsive-mt lg:mt-0">
                     <div class="glass-card responsive-padding rounded-2xl h-full">
                         <h3 class="text-2xl md:text-3xl font-bold responsive-mb gradient-text">$ contact_information</h3>
@@ -1281,31 +1267,28 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="ml-4 md:ml-6">
-                                    <h4 class="text-lg md:text-xl font-medium text-white">$ email</h4>
-                                    <p class="text-gray-300 text-base md:text-lg code-font">jsquarecybertech@gmail.com</p>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">$ email</div>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">jsquarecybertech@gmail.com</div>
                                 </div>
                             </div>
-                            
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 text-primary text-xl md:text-2xl mt-1">
-                                    <i class="fas fa-phone-alt"></i>
+                                    <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="ml-4 md:ml-6">
-                                    <h4 class="text-lg md:text-xl font-medium text-white">$ phone</h4>
-                                    <p class="text-gray-300 text-base md:text-lg code-font">+91 8128709152</p>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">$ phone</div>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">+91 8128709152</div>
                                 </div>
                             </div>
-                            
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 text-primary text-xl md:text-2xl mt-1">
                                     <i class="fab fa-instagram"></i>
                                 </div>
                                 <div class="ml-4 md:ml-6">
-                                    <h4 class="text-lg md:text-xl font-medium text-white">$ instagram</h4>
-                                    <a href="https://instagram.com/jsquare_cybertech" target="_blank" class="text-gray-300 hover:text-primary transition text-base md:text-lg code-font">@jsquare_cybertech</a>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">$ instagram</div>
+                                    <div class="text-gray-300 text-sm md:text-base code-font">@jsquare_cybertech</div>
                                 </div>
                             </div>
-                            
                             <div class="pt-6 md:pt-8 border-t border-gray-800">
                                 <h4 class="text-lg md:text-xl font-medium text-white responsive-mb">$ follow_us</h4>
                                 <div class="flex space-x-4 md:space-x-6">
@@ -1320,83 +1303,126 @@
             </div>
         </div>
     </section>
-    
-    <!-- Cybersecurity Awareness Tips Section -->
-    <section class="responsive-py relative overflow-hidden responsive-section">
-        <div class="responsive-w mx-auto responsive-px text-center">
-            <h3 class="section-title font-bold title-font responsive-mb gradient-text">> cyber_threats & fraud_awareness</h3>
-            <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-8 md:mb-10"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-envelope-open-text"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Phishing Awareness</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Never click suspicious links or download attachments from unknown sources. Always verify the sender's email address and look for subtle misspellings.</p>
-                    <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#think_before_you_click</span>
-                </div>
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-key"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Password Hygiene</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Use strong, unique passwords for every account. Enable two-factor authentication wherever possible and never share your passwords.</p>
-                    <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#lock_it_down</span>
-                </div>
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-user-secret"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Social Engineering</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Fraudsters may impersonate trusted contacts or officials. Always verify requests for sensitive information, even if they seem urgent or familiar.</p>
-                    <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#verify_requests</span>
-                </div>
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-mobile-alt"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Mobile Security</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Install apps only from official stores. Keep your device updated and avoid using public Wi-Fi for sensitive transactions.</p>
-                    <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#secure_your_device</span>
-                </div>
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Update & Patch</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">Regularly update your software and operating systems. Patches fix vulnerabilities that hackers exploit.</p>
-                    <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#update_now</span>
-                </div>
-                <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
-                    <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-exclamation-triangle"></i></div>
-                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Report Suspicious Activity</h4>
-                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">If you notice anything unusual—unexpected emails, login attempts, or transactions—report it immediately to your IT/security team or service provider.</p>
-                    <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#report_fraud</span>
+
+    <!-- Common Questions Section -->
+<section id="common-questions" class="responsive-py responsive-section">
+    <div class="responsive-w mx-auto responsive-px">
+        <div class="text-center responsive-mb">
+            <h2 class="section-title font-bold title-font responsive-mb">
+                <span class="gradient-text">> common_questions()</span>
+            </h2>
+            <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+            <p class="text-gray-400 max-w-3xl mx-auto mt-6 md:mt-8 text-lg md:text-xl code-font">
+                // Frequently asked questions about our services and support
+            </p>
+        </div>
+        <div class="space-y-4 md:space-y-6">
+            <div class="glass-card responsive-padding rounded-xl">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(1)">
+                    <span class="font-medium text-white text-lg md:text-xl code-font">> response_time_for_emergencies?</span>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-1"></i>
+                </button>
+                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-1">
+                    Our team responds to emergencies within 30 minutes, 24/7. For critical incidents, you can reach us via our emergency hotline or email.
                 </div>
             </div>
-            <!-- Banking Fraud Awareness Section -->
-            <div class="mt-12 md:mt-16">
-                <div class="glass-card responsive-padding rounded-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 shadow-lg border-2 border-accent/40 animate-pulse">
-                    <div class="flex-shrink-0 text-accent text-5xl md:text-6xl mb-4 md:mb-0">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="text-left">
-                        <h4 class="text-xl md:text-2xl font-bold mb-2 gradient-text">Banking Fraud: Stay One Step Ahead</h4>
-                        <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2 mb-2 md:mb-3">
-                            <li>Never share your OTP, PIN, or passwords—even with someone claiming to be from your bank.</li>
-                            <li>Always verify calls, emails, or SMS about your account by contacting your bank directly.</li>
-                            <li>Check your bank statements regularly for unauthorized transactions.</li>
-                            <li>Use official banking apps/websites—avoid links sent via SMS or email.</li>
-                            <li>Report lost cards or suspicious activity immediately to your bank's helpline.</li>
-                        </ul>
-                        <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#safe_banking #fraud_alert</span>
-                    </div>
+            <div class="glass-card responsive-padding rounded-xl">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(2)">
+                    <span class="font-medium text-white text-lg md:text-xl code-font">> how_do_you_handle_data_privacy?</span>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-2"></i>
+                </button>
+                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-2">
+                    We strictly follow global data privacy standards and never share your information with third parties. All data is encrypted and access is restricted.
                 </div>
             </div>
-            <div class="mt-10 md:mt-12 text-center">
-                <span class="inline-block bg-gradient-to-r from-primary to-secondary text-dark text-sm md:text-base code-font px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg animate-pulse">
-                    Stay aware. Stay secure. Share these tips with your friends & family!
-                </span>
+            <div class="glass-card responsive-padding rounded-xl">
+                <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ(3)">
+                    <span class="font-medium text-white text-lg md:text-xl code-font">> can_you_customize_security_solutions?</span>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300 text-lg md:text-xl" id="faq-icon-3"></i>
+                </button>
+                <div class="hidden mt-3 md:mt-4 text-gray-300 text-base md:text-lg code-font" id="faq-content-3">
+                    Yes! We specialize in custom security solutions tailored to your business needs. Contact us to discuss your requirements.
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+   <!-- Cybersecurity Awareness Tips Section -->
+<section class="responsive-py relative overflow-hidden responsive-section">
+    <div class="responsive-w mx-auto responsive-px text-center">
+        <h3 class="section-title font-bold title-font responsive-mb gradient-text">> cyber_threats & fraud_awareness</h3>
+        <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-8 md:mb-10"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-envelope-open-text"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Phishing Awareness</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">Never click suspicious links or download attachments from unknown sources. Always verify the sender's email address and look for subtle misspellings.</p>
+                <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#think_before_you_click</span>
+            </div>
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-key"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Password Hygiene</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">Use strong, unique passwords for every account. Enable two-factor authentication wherever possible and never share your passwords.</p>
+                <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#lock_it_down</span>
+            </div>
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-user-secret"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Social Engineering</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">Fraudsters may impersonate trusted contacts or officials. Always verify requests for sensitive information, even if they seem urgent or familiar.</p>
+                <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#verify_requests</span>
+            </div>
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-primary mb-3 md:mb-4"><i class="fas fa-mobile-alt"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Mobile Security</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">Install apps only from official stores. Keep your device updated and avoid using public Wi-Fi for sensitive transactions.</p>
+                <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#secure_your_device</span>
+            </div>
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-shield-alt"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Update & Patch</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">Regularly update your software and operating systems. Patches fix vulnerabilities that hackers exploit.</p>
+                <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#update_now</span>
+            </div>
+            <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                <div class="text-4xl md:text-5xl text-accent mb-3 md:mb-4"><i class="fas fa-exclamation-triangle"></i></div>
+                <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Report Suspicious Activity</h4>
+                <p class="text-gray-300 text-sm md:text-base code-font mb-2">If you notice anything unusual—unexpected emails, login attempts, or transactions—report it immediately to your IT/security team or service provider.</p>
+                <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#report_fraud</span>
+            </div>
+        </div>
+        <!-- Banking Fraud Awareness Section -->
+        <div class="mt-12 md:mt-16">
+            <div class="glass-card responsive-padding rounded-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 shadow-lg border-2 border-accent/40 animate-pulse">
+                <div class="flex-shrink-0 text-accent text-5xl md:text-6xl mb-4 md:mb-0">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="text-left">
+                    <h4 class="text-xl md:text-2xl font-bold mb-2 gradient-text">Banking Fraud: Stay One Step Ahead</h4>
+                    <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2 mb-2 md:mb-3">
+                        <li>Never share your OTP, PIN, or passwords—even with someone claiming to be from your bank.</li>
+                        <li>Always verify calls, emails, or SMS about your account by contacting your bank directly.</li>
+                        <li>Check your bank statements regularly for unauthorized transactions.</li>
+                        <li>Use official banking apps/websites—avoid links sent via SMS or email.</li>
+                        <li>Report lost cards or suspicious activity immediately to your bank's helpline.</li>
+                    </ul>
+                    <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#safe_banking #fraud_alert</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 md:mt-12 text-center">
+            <span class="inline-block bg-gradient-to-r from-primary to-secondary text-dark text-sm md:text-base code-font px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg animate-pulse">
+                Stay aware. Stay secure. Share these tips with your friends & family!
+            </span>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="glass-card responsive-py border-t border-primary/20">
         <div class="responsive-w mx-auto responsive-px">
             <div class="grid grid-cols-1 md:grid-cols-4 responsive-gap">
                 <div class="md:col-span-2">
-                    <h3 class="text-xl md:text-2xl font-bold responsive-mb title-font gradient-text">J Square Cyber Tech</h3>
+                    <h3 class="text-xl md:text-2xl font-bold responsive-mb title-font gradient-text">J² Cyber Tech</h3>
                     <p class="text-gray-400 text-sm md:text-base code-font">
                         > next-gen_cybersecurity_solutions<br>
                         > powered_by_ai_and_elite_hackers
@@ -1427,5 +1453,90 @@
                 <div>
                     <h4 class="text-lg md:text-xl font-bold text-white responsive-mb">$ services</h4>
                     <ul class="space-y-2 md:space-y-3 text-gray-400 text-sm md:text-base code-font">
-                        <li class="flex items
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Penetration Testing</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Threat Intelligence</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Cloud Security</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Red Teaming</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Secure Development</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            <a href="#services" class="hover:text-primary transition">Managed Security</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg md:text-xl font-bold text-white responsive-mb">$ contact_info</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font">
+                        <i class="fas fa-map-marker-alt text-primary mr-2"></i>
+                        Borsad, Gujarat, India
+                    </p>
+                    <p class="text-gray-300 text-sm md:text-base code-font">
+                        <i class="fas fa-envelope text-primary mr-2"></i>
+                        jsquarecybertech@gmail.com
+                    </p>
+                    <p class="text-gray-300 text-sm md:text-base code-font">
+                        <i class="fas fa-phone-alt text-primary mr-2"></i>
+                        +91 8128709152
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 md:mt-16 border-t border-primary/20 pt-8">
+                <p class="text-center text-gray-400 text-sm md:text-base code-font">
+                    &copy; 2025 J Square Cyber Tech. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+ 
+
+    <!-- Mobile menu toggle script -->
+    <script>
+// Mobile menu toggle for header (works with .mobile-nav-container and .open class)
+document.addEventListener('DOMContentLoaded', function() {
+    var menuBtn = document.getElementById('mobile-menu-button');
+    var menu = document.getElementById('mobile-menu');
+    if (menuBtn && menu) {
+        menuBtn.addEventListener('click', function() {
+            menu.classList.toggle('open');
+        });
+        // Optional: close menu when a link is clicked (for better UX)
+        menu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menu.classList.remove('open');
+            });
+        });
+    }
+});
+
+// FAQ toggle for custom dropdowns
+function toggleFAQ(id) {
+    var content = document.getElementById('faq-content-' + id);
+    var icon = document.getElementById('faq-icon-' + id);
+    if (content) {
+        content.classList.toggle('hidden');
+    }
+    if (icon) {
+        icon.classList.toggle('rotate-180');
+    }
+}
+    </script>
+</body>
 </html>
