@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -25,48 +25,7 @@
                 overflow-x: hidden;
                 scroll-behavior: smooth;
             }
-
-            /* Add this for better centering of last row services */
-            .services-last-row {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 2rem;
-            }
-            @media (min-width: 768px) {
-                .services-last-row {
-                    flex-direction: row;
-                    justify-content: center;
-                    gap: 2rem;
-                }
-                .services-last-row > .service-card {
-                    width: 350px;
-                    max-width: 100%;
-                }
-            }
-            @media (max-width: 767px) {
-                .services-last-row > .service-card {
-                    width: 100%;
-                }
-            }
-
-            /* For banking fraud awareness section centering */
-            .banking-awareness-center {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-            @media (min-width: 768px) {
-                .banking-awareness-center {
-                    flex-direction: row;
-                }
-                .banking-awareness-center > div {
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-
+            
             .code-font {
                 font-family: 'JetBrains Mono', monospace;
             }
@@ -1013,10 +972,36 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <!-- Centered last row for 2 cards -->
-                <div class="flex justify-center mt-8 space-x-0 md:space-x-8 services-last-row">
-                    <div class="service-card w-full md:w-1/2 max-w-md">
+                    
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="glass-card h-full responsive-padding rounded-2xl">
+                            <div class="text-secondary text-4xl md:text-5xl responsive-mb">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold responsive-mb">Red Teaming</h3>
+                            <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
+                                Real-world attack simulations to test your organization's detection and response capabilities.
+                            </p>
+                            <ul class="text-gray-400 space-y-2 md:space-y-3 text-sm md:text-base code-font">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
+                                    physical_security_testing()
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
+                                    purple_team_exercises()
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-secondary mr-2 md:mr-3"></i>
+                                    adversary_emulation()
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-card">
                         <div class="glass-card h-full responsive-padding rounded-2xl">
                             <div class="text-primary text-4xl md:text-5xl responsive-mb">
                                 <i class="fas fa-laptop-code"></i>
@@ -1041,7 +1026,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="service-card w-full md:w-1/2 max-w-md mt-8 md:mt-0 md:ml-8">
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card">
                         <div class="glass-card h-full responsive-padding rounded-2xl">
                             <div class="text-secondary text-4xl md:text-5xl responsive-mb">
                                 <i class="fas fa-headset"></i>
@@ -1101,10 +1088,10 @@
                         // Cybersecurity professionals dedicated to protecting your business
                     </p>
                 </div>
-
-                <!-- Jeel J Makwana as Owner at the Top -->
-                <div class="flex justify-center mb-12">
-                    <div class="glass-card rounded-2xl overflow-hidden max-w-xl w-full">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 responsive-gap max-w-5xl mx-auto">
+                    <!-- Team Member 1 -->
+                    <div class="glass-card rounded-2xl overflow-hidden">
                         <div class="responsive-padding">
                             <div class="flex flex-col md:flex-row items-center responsive-mb">
                                 <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
@@ -1135,11 +1122,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Other Team Members Below -->
-                <div class="grid grid-cols-1 md:grid-cols-2 responsive-gap max-w-5xl mx-auto">
-                    <!-- Ajay Sahani -->
+                    
+                    <!-- Team Member 2 -->
                     <div class="glass-card rounded-2xl overflow-hidden">
                         <div class="responsive-padding">
                             <div class="flex flex-col md:flex-row items-center responsive-mb">
@@ -1168,7 +1152,27 @@
                         </div>
                     </div>
                     
-                    <!-- Mohil Parekh -->
+                    <!-- Team Member 3 -->
+                    <div class="glass-card rounded-2xl overflow-hidden">
+                        <div class="responsive-padding">
+                            <div class="flex flex-col md:flex-row items-center responsive-mb">
+                                <div class="responsive-circle rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl md:text-4xl font-bold text-dark mb-4 md:mb-0 md:mr-6">
+                                    BP
+                                </div>
+                                <div class="text-center md:text-left">
+                                    <h3 class="text-xl md:text-2xl font-bold gradient-text">Bhumil Patel</h3>
+                                    <p class="text-gray-400 text-sm md:text-base code-font">// code_review</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 responsive-mb leading-relaxed text-base md:text-lg">
+                                Code Reviewer with expertise in identifying vulnerabilities and ensuring code quality. Bhumil is committed to fostering a culture of security within development teams.
+                            </p>
+                            <div class="responsive-mb">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 4 -->
                     <div class="glass-card rounded-2xl overflow-hidden">
                         <div class="responsive-padding">
                             <div class="flex flex-col md:flex-row items-center responsive-mb">
@@ -1341,6 +1345,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Cybersecurity Awareness Tips Section -->
     <section class="responsive-py relative overflow-hidden responsive-section">
@@ -1402,6 +1407,46 @@
                     <span class="inline-block bg-primary/10 text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#avoid_public_wifi</span>
                 </div>
                 <div class="glass-card responsive-padding rounded-2xl flex flex-col items-center">
+                    <div class="text-4xl md:text-5xl text-secondary mb-3 md:mb-4"><i class="fas fa-user-lock"></i></div>
+                    <h4 class="text-lg md:text-xl font-bold mb-2 gradient-text">Impersonation & Fake Support</h4>
+                    <p class="text-gray-300 text-sm md:text-base code-font mb-2">
+                        Beware of calls, emails, or messages from people claiming to be tech support or bank officials. Never share remote access or personal details unless you have verified their identity through official channels.
+                    </p>
+                    <span class="inline-block bg-secondary/10 text-secondary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#verify_support</span>
+                </div>
+            </div>
+            <!-- Banking Fraud Awareness Section -->
+            <div class="mt-12 md:mt-16">
+                <div class="glass-card responsive-padding rounded-2xl max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 shadow-lg border-2 border-accent/40 animate-pulse">
+                    <div class="flex-shrink-0 text-accent text-5xl md:text-6xl mb-4 md:mb-0">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-xl md:text-2xl font-bold mb-2 gradient-text">Banking Fraud: Stay One Step Ahead</h4>
+                        <ul class="list-disc pl-5 md:pl-6 text-gray-300 text-sm md:text-base code-font space-y-1 md:space-y-2 mb-2 md:mb-3">
+                            <li>Never share your OTP, PIN, or passwords—even with someone claiming to be from your bank.</li>
+                            <li>Always verify calls, emails, or SMS about your account by contacting your bank directly.</li>
+                            <li>Check your bank statements regularly for unauthorized transactions.</li>
+                            <li>Use official banking apps/websites—avoid links sent via SMS or email.</li>
+                            <li>Report lost cards or suspicious activity immediately to your bank's helpline.</li>
+                        </ul>
+                        <span class="inline-block bg-accent/10 text-accent text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full mt-1 md:mt-2">#safe_banking #fraud_alert</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 md:mt-12 text-center">
+                <span class="inline-block bg-gradient-to-r from-primary to-secondary text-dark text-sm md:text-base code-font px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg animate-pulse">
+                    Stay aware. Stay secure. Share these tips with your friends & family!
+                </span>
+                <div class="mt-6">
+                    <span class="inline-block bg-dark text-primary text-xs md:text-sm code-font px-3 md:px-4 py-1 rounded-full font-semibold">
+                        If in doubt, always double-check with your bank or IT/security team before taking action on any suspicious message or request.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- Footer -->
         <footer class="glass-card responsive-py border-t border-primary/20">
             <div class="responsive-w mx-auto responsive-px">
@@ -1449,6 +1494,10 @@
                             <li class="flex items-center">
                                 <i class="fas fa-check text-primary mr-2"></i>
                                 <a href="#services" class="hover:text-primary transition">Cloud Security</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <a href="#services" class="hover:text-primary transition">Red Teaming</a>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-check text-primary mr-2"></i>
